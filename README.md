@@ -42,3 +42,7 @@
 	やっと戻ってきました。夏休みを忙しくて、こちらの趣味に手が回りませんでした。ちょうど１ヶ月ですね。
 	お金が金欠中なのでできるだけ早く開発して一発当てていきたいモノですね。
 	とりあえずデータの前処理をやっていきます。
+	place,round,type,wind,weatherをone-hot-encodingした。
+	結局、name,date,race_code,race_timeをdropした。
+	簡単にlightgbmでやってみた。model = lgb.LGBMClassifier(boosting_type='goss',max_depth=5,random_state=0),log_lossは1.17309414くらい
+	feature importanceではやはりsst_time,number,in,display,boat,motor,逃げ,position,wind_strong,差しの順に重要であることがわかった。
