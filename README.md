@@ -46,3 +46,10 @@
 	結局、name,date,race_code,race_timeをdropした。
 	簡単にlightgbmでやってみた。model = lgb.LGBMClassifier(boosting_type='goss',max_depth=5,random_state=0),log_lossは1.17309414くらい
 	feature importanceではやはりsst_time,number,in,display,boat,motor,逃げ,position,wind_strong,差しの順に重要であることがわかった。
+	parameterのboosting_typeによって重要度は少し変動した。
+	これはlightgbm_result_prototype.ipynbのもの
+	nameをone-hotしてみた
+
+10/13
+	これから初心者チームでkaggleのone problemに参加するので、あまりこちらにコミット出来なさそうな予感。
+	１ヶ月ほどなのでそれが終了してから競艇AIに戻ろうと思います。
